@@ -5,12 +5,12 @@ import { Stars, Float, Text, Image, Sparkles } from "@react-three/drei";
 import { useRef, useState } from "react";
 import * as THREE from "three";
 
-// CONFIG: Your photos here (ensure files exist in /public)
+// CONFIG: my photos here 
 const memories = [
-  { pos: [-3, 0, 0], rot: [0, 0.3, 0], url: "/1.jpg" },
-  { pos: [3, 0, 0], rot: [0, -0.3, 0], url: "/2.jpg" },
-  { pos: [0, 2.5, -1], rot: [0, 0, 0], url: "/3.jpg" },
-  // Add more as needed...
+  // We added '/memories' to the front so the code can find them!
+  { pos: [-3, 0, 0], rot: [0, 0.3, 0], url: "/memories/1.jpg" },
+  { pos: [3, 0, 0], rot: [0, -0.3, 0], url: "/memories/2.jpg" },
+  { pos: [0, 2.5, -1], rot: [0, 0, 0], url: "/memories/3.jpg" },
 ];
 
 function FloatingMemories() {
